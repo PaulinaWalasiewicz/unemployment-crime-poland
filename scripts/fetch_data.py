@@ -1,3 +1,8 @@
+"""
+fetch_data.py
+Downloads unemployment, population and crime data for Polish voivodeships
+from the GUS Local Data Bank (BDL) API and saves them as CSV files in data/raw/.
+"""
 import requests
 import pandas as pd
 
