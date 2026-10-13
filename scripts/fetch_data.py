@@ -60,14 +60,14 @@ def fetch_variable(var_id):
 # print(len(df))
 
 
-all_tables_upn = []
+all_tables_unp = []
 for id,name in VARIABLES_UNP.items():
     print(f"Fetching {name}...")
     df = fetch_variable(id)
     df["variable"] = name
-    all_tables_upn.append(df)
+    all_tables_unp.append(df)
     
-combined = pd.concat(all_tables_upn,ignore_index=True)
+combined = pd.concat(all_tables_unp,ignore_index=True)
 combined.to_csv("data/raw/bdl_data_unemployment.csv",index=False)
 print(combined.shape)
 
@@ -78,6 +78,6 @@ for id,name in VARIABLES_CRIME.items():
     df["variable"] = name
     all_tables_crime.append(df)
     
-combined = pd.concat(all_tables_crime,ignore_index=True)
-combined.to_csv("data/raw/bdl_data_crime.csv",index=False)
+combined2 = pd.concat(all_tables_crime,ignore_index=True)
+combined2.to_csv("data/raw/bdl_data_crime.csv",index=False)
 print(combined.shape)
