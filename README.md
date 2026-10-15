@@ -46,6 +46,15 @@ The voivodeships where unemployment went down the most didn't have a bigger drop
 Śląskie in 2022 and Zachodniopomorskie in 2019 had one-year jumps in crime - in Śląskie from economic crime,
 in Zachodniopomorskie from criminal offences. Małopolskie was the only voivodeship where crime was higher in 2024 than in 2014.
 
+## Power BI dashboard
+
+An interactive version of the analysis. You can choose the year and the crime category,
+and all charts change: the map, the scatter plot (unemployment vs crime), the trend for Poland and the ranking.
+
+![Dashboard](images/dashboard.png)
+
+The file is in `dashboard/` (open it in Power BI Desktop).
+
 ## Data
 
 All data comes from the [GUS Local Data Bank (BDL)](https://bdl.stat.gov.pl/), downloaded with the BDL API.
@@ -78,6 +87,8 @@ GUS also recalculated the population in 2021, so rates before and after 2020 can
 2. **Cleaning** (`notebooks/01_cleaning.ipynb`) - checks for missing values, chooses the years, makes two clean tables (unemployment and crimes) and checks the GUS rates against my own calculation.
 3. **Analysis** (`notebooks/02_analysis.ipynb`) - trends for Poland, comparing voivodeships,
    correlations for every year and category, unusual values and change over 10 years.
+4. **Dashboard** (`dashboard/`) - Power BI report built on the clean tables, with a star schema (voivodeship and year tables)
+   and DAX measures that calculate the rates the same way as in the notebook.
 
 A few things I had to be careful about:
 - I use crimes **per 1000 inhabitants**, not the number of crimes, because big voivodeships have more crimes just because more people live there.
@@ -98,7 +109,7 @@ unemployment-crime-poland/
 │   ├── 01_cleaning.ipynb
 │   └── 02_analysis.ipynb
 ├── images/             # charts from the analysis
-└── dashboard/          # Power BI dashboard (coming soon)
+└── dashboard/          # Power BI dashboard
 ```
 
 ## How to run it
@@ -110,3 +121,6 @@ python scripts/fetch_data.py
 
 Then open the notebooks in the `notebooks/` folder and run them in order.
 
+## Tools
+
+Python (pandas, numpy, matplotlib, requests), Jupyter Notebook, BDL API, Power BI (Power Query, DAX)
