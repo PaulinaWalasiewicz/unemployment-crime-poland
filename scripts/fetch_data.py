@@ -31,10 +31,15 @@ VARIABLES_CRIME ={
     498624: "crimes_life_health_per_1000",
 }
 
-def fetch_variable(var_id):
+VARIABLES_POLAND = {
+    60270: "unemployment_rate", 
+    398594: "crimes_total_per_1000"
+}
+
+def fetch_variable(var_id,unit_level=2):
     url = f"{BASE_URL}{var_id}"
     params = {
-        "unit-level":2,
+        "unit-level":unit_level,
         "page-size":100,
         "format":"json",
     }
@@ -86,3 +91,12 @@ for id,name in VARIABLES_CRIME.items():
 combined2 = pd.concat(all_tables_crime,ignore_index=True)
 combined2.to_csv("data/raw/bdl_data_crime.csv",index=False)
 print(combined.shape)
+
+table_poland =[]
+for id,name in VARIABLES_POLAND.items():
+    df = fetch_variable(id,unit_level=0)
+    df["variable"] = name
+    table_poland.append(df)
+
+df_poland = pd.concat(table_poland)
+df_poland.to_csv("data/raw/bdl_data_poland.csv",index=False)
