@@ -1,3 +1,5 @@
+**English** | [Polski](README.pl.md)
+
 # Unemployment and crime in Polish voivodeships (2014-2024)
 
 Do voivodeships with higher unemployment also have more crime?
@@ -53,7 +55,7 @@ and all charts change: the map, the scatter plot (unemployment vs crime), the tr
 
 ![Dashboard](images/dashboard.png)
 
-The file is in `dashboard/` (open it in Power BI Desktop).
+The file is in `dashboard/`.
 
 ## Data
 
@@ -123,4 +125,4 @@ Then open the notebooks in the `notebooks/` folder and run them in order.
 
 ## Tools
 
-Python (pandas, numpy, matplotlib, requests), Jupyter Notebook, BDL API, Power BI (Power Query, DAX)
+Python (pandas, numpy, matplotlib, requests), Jupyter Notebook, BDL API, Power BI
