@@ -16,7 +16,7 @@ użyłam przestępstw na 1000 mieszkańców zamiast liczby przestępstw, porówn
 zamiast w czasie, wybrałam tylko lata z tym samym sposobem liczenia przestępstw, a wszystkie dane pobrałam
 przez API BDL zamiast zbierać je z plików Excel ze stron policji i GUS.
 
-## Najważniejsze wnioski
+## Co odkryłam
 
 **1. Bezrobocie spadło o ponad połowę, a przestępczość została prawie taka sama.**
 W latach 2014-2024 bezrobocie w Polsce spadło z 11,4% do 5,1%.

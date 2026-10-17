@@ -16,7 +16,7 @@ I used crimes per 1000 inhabitants instead of numbers of crimes, compared voivod
 instead of over time, chose only years with the same way of counting crimes, and downloaded all the data
 with the BDL API instead of collecting it from Excel files from the police and GUS websites.
 
-## Key findings
+## What I found
 
 **1. Unemployment went down by more than half, but crime stayed almost the same.**
 From 2014 to 2024 unemployment in Poland went down from 11.4% to 5.1%.
