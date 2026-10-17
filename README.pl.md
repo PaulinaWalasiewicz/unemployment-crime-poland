@@ -2,12 +2,11 @@
 
 # Bezrobocie a przestępczość w polskich województwach (2014-2024)
 
-Czy w województwach z wyższym bezrobociem jest też więcej przestępstw?
-Sprawdziłam to na oficjalnych danych GUS dla wszystkich 16 województw.
+Czy w województwach z wyższym bezrobociem jest też więcej przestępstw? Sprawdziłam to na oficjalnych
+danych GUS dla wszystkich 16 województw z lat 2014-2024.
 
-**Krótka odpowiedź:** nie. W tych danych wyższe bezrobocie nie idzie w parze z większą przestępczością.
-Jest raczej odwrotnie - ale to najpewniej przez inne różnice między regionami,
-a nie przez samo bezrobocie.
+Okazało się, że nie. W województwach z wyższym bezrobociem przestępstw jest zwykle mniej.
+Myślę, że powodem są inne różnice między regionami, na przykład duże miasta.
 
 ## Skąd ten projekt
 
