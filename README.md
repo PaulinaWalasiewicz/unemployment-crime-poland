@@ -2,12 +2,11 @@
 
 # Unemployment and crime in Polish voivodeships (2014-2024)
 
-Do voivodeships with higher unemployment also have more crime?
-I checked this using official data from GUS for all 16 Polish voivodeships.
+Do voivodeships with higher unemployment also have more crime? I checked this with official GUS data
+for all 16 voivodeships from 2014 to 2024.
 
-**Short answer:** no. In this data higher unemployment does not go together with more crime.
-If anything, it's the opposite - but that is most likely because of other differences between regions,
-not because of unemployment itself.
+It turned out they don't. Voivodeships with higher unemployment usually have less crime.
+I think the reason is other differences between regions, for example big cities.
 
 ## Background
 
